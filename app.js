@@ -17,7 +17,7 @@ const postRoutes = require('./routes/postRoutes');
 
 // Initialize Firebase Admin SDK
 
-const serviceAccount = require('/Users/idmstudent/Desktop/final-project/final-project-39dfa-firebase-adminsdk-7lhub-f370ac69a1.json'); // Path to your Firebase service account key
+const serviceAccount = require('/Users/idmstudent/Desktop/final-project-39dfa-firebase-adminsdk-7lhub-f370ac69a1.json'); // Path to your Firebase service account key
 firebase.initializeApp({
   credential: firebase.credential.cert(serviceAccount),
   databaseURL: 'https://final-project-39dfa-default-rtdb.firebaseio.com/' 
@@ -27,6 +27,8 @@ firebase.initializeApp({
 app.get('/', (req, res) => {
     res.send('Hello, world!'); // Example response for the root path
   });
+
+  
 
 
 // Middleware setup working thanks to express-session addon in my project

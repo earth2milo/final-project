@@ -1,5 +1,5 @@
 const firebaseApp = require('./firebaseConfig'); // Import Firebase configuration
-const firestore = firebaseApp.firestore(); // Initialize Firestore
+
 
 // Function to get user profile details
 const getUserProfile = async (userId) => {

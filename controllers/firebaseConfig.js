@@ -18,9 +18,12 @@ const firebaseConfig = {
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-const firestore = firebase.firestore();
 
+const auth = firebaseApp.auth();
+
+
+// Export the Firebase app for Node.js environment
 module.exports = {
-    firebaseApp,
-    firestore,
+  firebaseApp,
+  auth,
 };
